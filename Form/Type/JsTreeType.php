@@ -8,13 +8,13 @@
 
 namespace DspSofts\TreeBundle\Form\Type;
 
-use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 use Symfony\Component\Form\AbstractType;
+use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
 
 class JsTreeType extends AbstractType
 {
     public function getParent()
     {
-        return EntityType::class;
+        return ChoiceType::class;
     }
 }
